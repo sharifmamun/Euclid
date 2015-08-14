@@ -29,6 +29,8 @@ int main()
 
 	// Skip the first line -- HEADER
 	fgets(line, STRSIZE*NFIELDS, fp);
+
+	printf("%-40s %6s\n", "STATE","TOTAL");
 	while((c=getc(fp))!=EOF){
 		printf("%c",c);
 	}
